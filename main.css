@@ -1,0 +1,74 @@
+
+body {
+  font-family: 'Courier New', Courier, sans-serif;
+}
+
+.container {
+  padding: 0 100px;
+  margin-left: 200px;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 4em;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:#07db2e;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #e90d89;
+  width: 150px;
+}
+
+p {
+  font-size: 2em;
+  margin : 50px 10px 10px 0px;
+  font-family:Monospace;
+  color: rgb(23, 123, 33);
+  font-style:italic
+}
+
+h1 {
+  font-size: 3.8em;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 1.25em 0;
+  color:rgb(30, 161, 161);
+  font-style:oblique
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 30px;
+  /* Радиус скругления */
+  border: 7px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 20px 30px 0px rgba(28, 56, 235, 0.45);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 6px solid #920581;
+}
+
+.contacts {
+  font-size: 1em;
+  margin: 0px;
+  font-family:'Trebuchet MS';
+  color: rgb(23, 123, 33)
+}
